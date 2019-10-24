@@ -26,3 +26,11 @@
 .flex-center {
     align-items: center;
 }
+
+.flex-box{
+    margin: 10px 5px;
+}
+
+.flex-start{
+    //align-items: center;
+}

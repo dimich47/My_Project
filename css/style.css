@@ -11,13 +11,13 @@ header{
     color: #fff;
     background-color: #212121;
     align-items: center;
-
+    min-width: 700px;
 }
 
 
 header a, header p{
     color: #fff;
-    font-size: 2vh;
+
 }
 
 img {
@@ -29,10 +29,22 @@ img {
     width: 50%;
 }
 
+.region, .search, .sign{
+    font-size: 16px;
+}
+.phones{
+    font-size: 18px;
+}
+.button{
+    border: 2px solid orange;
+}
+
 nav a{
     color: darkgrey;
     margin: 10px auto;
-    font-size: 2vh;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: .015em;
 }
 nav a:hover {
     color: black;
@@ -40,6 +52,7 @@ nav a:hover {
 
 .container{
     max-width: 1200px;
+    min-width: 700px;
     margin: 0 auto;
 
 }
@@ -55,20 +68,19 @@ nav a:hover {
 }
 #slider li.active {
     display: block;
+    min-width: 700px;
 }
 #slider ul {
     padding: 0;
     margin: 0;
 }
 
+
 #slider li img {
     height: 50vh;
 }
 
-.action{
 
-
-}
 .action a{
 
     background: darkorange;
@@ -82,7 +94,7 @@ nav a:hover {
 
 }
 
-.article{
+.article, .production{
     max-width: 1200px;
     margin: 0 auto;
 
@@ -96,14 +108,27 @@ nav a:hover {
     text-align: center;
     flex-wrap: nowrap;
 }
-
-
 .article div{
     padding: 10px;
 }
+.article p{
+font-size: 20px;
+}
+
+.production{
+    text-align: center;
+}
+.production h1{
+    margin: 20px auto;
+}
+.block2 div{
+
+}
+
 footer{
     background-color: #212121;
     height: 50px;
+    min-width: 700px;
 }
 
 @media screen and (max-width: 900px)
@@ -119,9 +144,16 @@ footer{
     .search{
         display: none;
     }
-    .article p{
-        max-width: 60vw;
+    .article p {
+        width: 100%;
     }
+    .article div {
+        width: 80%;
+    }
+   .production div{
+
+   }
+
 
 }
 
